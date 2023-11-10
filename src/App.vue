@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <AppHeader />
+    <v-main>
+      <v-container class="pb-15 pt-15">
+        <AppHero />
+        <RequestForm />
+        <DataTable />
+      </v-container>
+    </v-main>
+    <AppFooter />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "@/layouts/AppHeader.vue";
+import AppFooter from "@/layouts/AppFooter.vue";
+import AppHero from "@/layouts/AppHero.vue";
+import RequestForm from "@/components/RequestForm.vue";
+import DataTable from "./components/DataTable.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    AppHeader,
+    AppFooter,
+    AppHero,
+    RequestForm,
+    DataTable,
+  },
+};
+</script>
