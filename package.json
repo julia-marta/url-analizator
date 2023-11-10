@@ -1,7 +1,7 @@
 {
   "name": "url-analizator",
   "version": "0.1.0",
-  "homepage": "https://julia-marta.github.io/url-analizator",
+  "homepage": "https://julia-marta.github.io/",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
